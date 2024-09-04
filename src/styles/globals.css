@@ -85,6 +85,10 @@
     -moz-text-fill-color: transparent;
   }
 
+  .slider-mask {
+    mask-image: linear-gradient(to right, transparent, #000, #000, transparent);
+  }
+
   .slider {
     animation: slider 20s infinite linear;
   }

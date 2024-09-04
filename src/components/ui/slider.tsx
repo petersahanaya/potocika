@@ -1,17 +1,14 @@
 import { cn } from "@/lib/utils"
-
-type SliderProps = {
-    className?: string
-}
+import { Classname } from "@/types/types"
 
 const items = ["Banda", "Salobar", "Tulehu", "Batu"]
 
-const Slider = ({ className }: SliderProps) => {
+const Slider = ({ className }: Classname) => {
     return (
         <section className={cn("w-full h-[20%] overflow-hidden", className)}>
             <div className="w-full h-full flex items-center relative">
                 {items.map((item, index) => (
-                    <div style={{ "animationDelay": `calc(20s / ${items.length} * (${items.length - index + 1} * -1))` }} className="text-6xl mx-4 absolute left-[100%] slider" key={item}>
+                    <div style={{ "animationDelay": `calc(20s / ${items.length} * (${items.length - index + 1} * -1))` }} className="text-6xl absolute left-[100%] slider" key={item}>
                         {item}
                     </div>
                 ))}
