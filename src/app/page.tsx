@@ -1,7 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import Container from "@/components/ui/container";
-import ServiceCard from "@/components/ui/service-card";
 import Slider from "@/components/ui/slider";
 
 import Link from "next/link"
@@ -9,15 +8,12 @@ import Link from "next/link"
 // Highlight
 import { MdOutlineArrowOutward } from "react-icons/md";
 
-// Services
-import { TbCapture } from "react-icons/tb";
-import { GrGallery } from "react-icons/gr";
-import { TbDeviceVisionPro } from "react-icons/tb";
 
 // Contact
 import { MdOutlineHandshake } from "react-icons/md";
 import { MdOutlineAttachEmail } from "react-icons/md";
 import { MdOutlineWhatsapp } from "react-icons/md";
+import Services from "@/components/ui/services";
 
 const App = () => {
   return (
@@ -65,27 +61,7 @@ const App = () => {
       </main>
 
       {/* Services */}
-      <Container className="bg-zinc-100 h-max py-44">
-        <header className="pb-6 w-full flex justify-center">
-          <h1 className="font-[400] w-[40%] text-center leading-[3rem] text-4xl heading">Contact and collaborating with me to get aesthetics diving photos</h1>
-        </header>
-
-        <div className="w-full h-[1px] bg-zinc-200"></div>
-
-        <section className="flex items-center justify-center gap-8 mt-8">
-          <ServiceCard title="Capture underwater" description="Showcasing stunning underwater photography that brings the beauty of the ocean to the surface.">
-            <TbCapture size={35} />
-          </ServiceCard>
-
-          <ServiceCard title="Galeries" description="Transforming the world beneath the waves into an exceptional visual experience.">
-            <GrGallery size={25} />
-          </ServiceCard>
-
-          <ServiceCard title="Create vision" description="Connecting audiences with the vibrant marine life and serene underwater landscapes.">
-            <TbDeviceVisionPro size={35} />
-          </ServiceCard>
-        </section>
-      </Container>
+      <Services />
 
       {/* Contact me */}
       <Container className="bg-white h-max py-16">
