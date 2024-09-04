@@ -1,5 +1,5 @@
-import { jakartaSans } from "@/lib/utils";
-import "./globals.css";
+import { ottercoFonts } from "@/lib/fonts";
+import "@/styles/globals.css";
 
 export default function RootLayout({
   children,
@@ -8,7 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jakartaSans.className}>{children}</body>
+      <body className={ottercoFonts.className}>{children}</body>
     </html>
   );
 }
