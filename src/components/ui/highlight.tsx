@@ -44,7 +44,7 @@ const Highlight = () => {
         </Avatar>
 
         {/* Highlight */}
-        <h1 className="font-[400] w-[70%] text-4xl sm:text-5xl sm:leading-[3rem] md:text-6xl lg:w-[60%] xl:w-[50%] text-center leading-[2rem] lg:leading-[4rem]  heading">
+        <h1 className="font-[400] w-[70%] text-4xl sm:text-5xl sm:leading-[3rem] md:text-6xl lg:w-[60%] xl:w-[50%] 2xl:w-[40%] text-center leading-[2rem] lg:leading-[4rem]  heading">
           Creating professional
           photos, diver, based
           in ambon city.
