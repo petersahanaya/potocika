@@ -30,14 +30,6 @@ export const metadata: Metadata = {
     images: "https://potocika-photography.com/twitter-image.jpg"
   },
   robots: "index, follow",
-  themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#000000" },
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" }
-  ],
-  viewport: {
-    width: "device-width",
-    initialScale: 1
-  },
   manifest: "https://potocika-photography.com/manifest.json",
   icons: [
     { rel: "icon", url: "https://potocika-photography.com/favicon.ico" },
@@ -46,8 +38,7 @@ export const metadata: Metadata = {
   verification: {
     google: "google-verification-token",
     yandex: "yandex-verification-token"
-  },
-  colorScheme: "light"
+  }
 };
 
 export default function RootLayout({
