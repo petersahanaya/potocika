@@ -8,6 +8,7 @@ const App = () => {
   return (
     <>
       <Loader />
+
       <main className="bg-zinc-100">
         <main className="w-screen h-screen">
           <Highlight />
